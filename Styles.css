@@ -1,18 +1,29 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
 .Logo{
     max-width: fit-content;
     margin-inline: auto;
 }
 
-.ContentsBox{
-    height: 100%;
+.ContentsBoxContainer{
     width: 160px;
+    height: 100%;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
     background-color: antiquewhite;
+    overflow-y: scroll;
     overflow-x: hidden;
-    padding-top: 20px;
+}
+
+.ContentsBoxContent{
+    padding-left: 20px;
+    background-color: inherit;
 }
 
 .navbar{
@@ -20,10 +31,15 @@
     overflow: hidden;
     position: sticky;
     top: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center; 
+    width: 100%;
 }
 
 .navbar a {
     float: left;
+    display: block;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
@@ -41,7 +57,36 @@
     color: white;
 }
 
-.content{
-    margin-left: 160px;
+.contentcontainer{
+    padding-left: 168px;
     padding-right: 16px;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.topnav .icon {
+    display: none;
 }
