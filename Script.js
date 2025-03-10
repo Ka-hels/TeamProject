@@ -1,10 +1,16 @@
-function adjustContentBoxHeight(){
-    const navbar = document.querySelector(".navbar");
-    let navbarHeight = navbar.getBoundingClientRect().top;
-    let navbarSizeVertical = navbar.offsetHeight;
-    document.querySelector(".ContentsBoxContainer").style.marginTop = `calc(${navbarHeight}px + ${navbarSizeVertical}px)`;
+function adjustSidenavHeight()//Changes the sidenav height to avoid overlap with top or bot nav
+{
+    const topnav = document.querySelector(".topnav");
+    let topnavVerticalPos = topnav.getBoundingClientRect().top;
+    let topnavHeight = topnav.offsetHeight;
+    
+    const botnav = document.querySelector(".botnav")
+    let botnavHeight = botnav.offsetHeight;
+    
+    document.querySelector(".sidenav").style.marginTop = `calc(${topnavVerticalPos}px + ${topnavHeight}px)`;
+    document.querySelector(".sidenav").style.marginBottom = `${botnavHeight}px`;
 }
 
-window.addEventListener('resize', adjustContentBoxHeight);
-window.addEventListener('load', adjustContentBoxHeight);
-window.addEventListener('scroll', adjustContentBoxHeight);
+window.addEventListener('resize', adjustSidenavHeight);
+window.addEventListener('load', adjustSidenavHeight);
+window.addEventListener('scroll', adjustSidenavHeight);
