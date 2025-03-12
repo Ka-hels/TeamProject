@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="en-uk">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="Styles.css">
+    <link href='https://fonts.googleapis.com/css?family=ADLaM Display' rel='stylesheet'>
     <script src="Script.js"></script>
+    <script src="https://kit.fontawesome.com/fa624e360f.js" crossorigin="anonymous"></script>
     <title>Mathematics</title>
 </head>
 <body>
     <header>
-        <h1 class="logo"><a href="Homepage.html">Website Name</a></h1> <!-- Will be altered to include a link back to the Homepage and potentially be an image -->
+        <h1 class="logo"><a href="Homepage.html">KidsByte</a></h1> <!-- Will be altered to include a link back to the Homepage and potentially be an image -->
     </header>
-        <div class="topnav">
+        <div class="topnav" id="myTopnav">
             <a href="Homepage.html">Home</a>
             <a class="active" href="Mathematics.html" >Mathematics</a>
             <a href="CyberSecurity.html">CyberSecurity</a>
             <a href="Networking.html">Networking</a>
             <a href="Technology.html">Technology</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
         
     <br>
-    <div class="sidenav">
+    <div class="sidenav" id="mySidenav">
         <div class="sidenavcontent">
             <h2>Content</h2>
             <a href="#Section 1">1. Lorem Ipsum</a><br>
@@ -46,8 +51,20 @@
         <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
         <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
         <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        
-        
+
+        <!-- Quiz here -->
+        <div class="quiz">
+            <p>Quiz</p>
+            <form action="">
+                <input type="checkbox" id="ans1" name="q1" value="ans1">
+                <label for="ans1">Answer 1</label><br>
+                <input type="checkbox" id="ans2" name="q2" value="ans2">
+                <label for="ans2">Answer 1</label><br>
+                <input type="checkbox" id="ans3" name="q3" value="ans3">
+                <label for="ans3">Answer 1</label><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
         
     </div>
     
