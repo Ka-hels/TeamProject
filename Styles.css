@@ -31,10 +31,12 @@ html, body {
     overflow-x: hidden;
 }
 
+
+
 .contentcontainer{
     padding-left: 168px;
     padding-right: 16px;
-    margin-bottom: 64px;
+    min-height: calc(100vh - 50px);
 }
 
 @media screen and (max-width: 600px) {
