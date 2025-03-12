@@ -54,15 +54,17 @@
 
         <!-- Quiz here -->
         <div class="quiz">
-            <p>Quiz</p>
+            <h2>Test Your Knowledge:</h2>
             <form action="">
-                <input type="checkbox" id="ans1" name="q1" value="ans1" class="rightAnswer">
+                <input type="checkbox" id="ans1" name="q1" value="rightAnswer" class="rightAnswer">
                 <label for="ans1">Answer 1</label><br>
-                <input type="checkbox" id="ans2" name="q2" value="ans2" class="wrongAnswer">
+                <input type="checkbox" id="ans2" name="q2" value="wrongAnswer" class="wrongAnswer">
                 <label for="ans2">Answer 1</label><br>
-                <input type="checkbox" id="ans3" name="q3" value="ans3" class="wrongAnswer">
+                <input type="checkbox" id="ans3" name="q3" value="wrongAnswer" class="wrongAnswer">
                 <label for="ans3">Answer 1</label><br>
                 <button class="CheckAnswer" onClick="checkAnswer()">Check Answer</button>
+                <p id="right">You got it right!!!</p>
+                <p id="wrong">Oops, try again!</p>
             </form>
         </div>
         
