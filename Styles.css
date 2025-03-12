@@ -30,12 +30,23 @@ html, body {
     overflow-x: hidden;
 }
 
+.contentcontainer{
+    padding-left: 168px;
+    padding-right: 16px;
+}
+
 @media screen and (max-width: 600px) {
-    .sidenav {display: none;}
+    .sidenav {
+        display: none;
+        width: 0;
+    }
     .sidenav a:not(:first-child) {display: none;}
     .sidenav a.icon {
         float: right;
         display: block;
+    }
+    .contentcontainer{
+        padding-left: 16px;
     }
 }
 
@@ -120,9 +131,4 @@ html, body {
 .botnav a:hover{
     background-color: #0d2b45;
     color: #8d697a;
-}
-
-.contentcontainer{
-    padding-left: 168px;
-    padding-right: 16px;
 }
