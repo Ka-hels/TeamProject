@@ -56,13 +56,13 @@
         <div class="quiz">
             <p>Quiz</p>
             <form action="">
-                <input type="checkbox" id="ans1" name="q1" value="ans1">
+                <input type="checkbox" id="ans1" name="q1" value="ans1" class="rightAnswer">
                 <label for="ans1">Answer 1</label><br>
-                <input type="checkbox" id="ans2" name="q2" value="ans2">
+                <input type="checkbox" id="ans2" name="q2" value="ans2" class="wrongAnswer">
                 <label for="ans2">Answer 1</label><br>
-                <input type="checkbox" id="ans3" name="q3" value="ans3">
+                <input type="checkbox" id="ans3" name="q3" value="ans3" class="wrongAnswer">
                 <label for="ans3">Answer 1</label><br>
-                <input type="submit" value="Submit">
+                <button class="CheckAnswer" onClick="checkAnswer()">Check Answer</button>
             </form>
         </div>
         

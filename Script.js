@@ -20,6 +20,10 @@ function myFunction() {
     }
 }
 
+function checkAnswer(){
+    
+}
+
 window.addEventListener('resize', adjustSidenavHeight);
 window.addEventListener('load', adjustSidenavHeight);
 window.addEventListener('scroll', adjustSidenavHeight);
