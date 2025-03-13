@@ -17,12 +17,12 @@ function adjustSidenavHeight()//Changes the sidenav height to avoid overlap with
     } else{
         sidenav.style.marginTop = `calc(${topnavVerticalPos}px + ${topnavHeight}px)`;
     }
+    let contentHeight = document.documentElement.scrollHeight - window.innerHeight; // Total scrollable height
+    let currentScrollPos = window.scrollY;
     
     document.querySelector(".sidenav").style.marginTop = `calc(${topnavVerticalPos}px + ${topnavHeight}px)`;
     document.querySelector(".sidenav").style.marginBottom = `${botnavHeight}px`;
-
-    let contentHeight = document.documentElement.scrollHeight - window.innerHeight; // Total scrollable height
-    let currentScrollPos = window.scrollY;
+    sidenav.style.height = `${contentHeight}px`
 
     // Adjust the bottom margin of the sidenav when the botnav is visible in the viewport
     if (botnavVerticalPos <= window.innerHeight) {

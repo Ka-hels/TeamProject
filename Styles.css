@@ -20,7 +20,7 @@ html, body {
     text-decoration: none;
 }
 .sidenav{
-    width: 160px;
+    width: 200px;
     height: 100%;
     position: fixed;
     z-index: 1;
@@ -33,7 +33,7 @@ html, body {
 }
 
 .contentcontainer{
-    padding-left: 172px;
+    padding-left: 216px;
     padding-right: 16px;
     min-height: calc(100vh - 50px);
     font-family: "Open Sans"
@@ -55,18 +55,25 @@ html, body {
 }
 
 .sidenavcontent{
-    padding-left: 20px;
-    background-color: inherit;
+    padding: 20px;
+    background-color: #ffaa5e;
+    font-family: "Open Sans";
+    font-size: 1.25em;
+}
+
+.sidenavcontent a {
+    color: #203c56;
+    text-decoration: none;
 }
 
 .topnav{
-    position: fixed;
+    position: sticky;
+    top: 0;
     width: 100%;
     background-color: #203c56;
     overflow: hidden;
+    font-family: "Open Sans"
 }
-
-
 
 .topnav a {
     float: left;
