@@ -27,8 +27,9 @@ html, body {
     top: 0;
     left: 0;
     background-color: #ffaa5e;
-    overflow-y: hidden;
+    overflow-y: auto;
     overflow-x: hidden;
+    transition: top 0.2s ease-in-out;
 }
 
 .contentcontainer{
@@ -59,11 +60,13 @@ html, body {
 }
 
 .topnav{
-    position: sticky;
-    top: 0;
+    position: fixed;
+    width: 100%;
     background-color: #203c56;
     overflow: hidden;
 }
+
+
 
 .topnav a {
     float: left;
@@ -138,12 +141,6 @@ html, body {
     color: #8d697a;
 }
 
-#right {
-    display: none;
-    background-color: lightgreen;
-}
-
-#wrong {
-    display: none;
-    background-color: lightcoral;
+.quiz-container{
+    
 }

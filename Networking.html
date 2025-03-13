@@ -26,34 +26,39 @@
     <div class="sidenav" id="mySidenav">
         <div class="sidenavcontent">
             <h2>Content</h2>
-            <a href="#Section 1">1. Lorem Ipsum</a><br>
-            <a href="#Section 2">2. Lorem Ipsum</a><br>
-            <a href="#Section 3">3. Lorem Ipsum</a><br>
-            <a href="#Section 4">4. Lorem Ipsum</a>
+            <a href="#Section 1">What is a Network?</a><br>
+            <a href="#Section 2">The Internet vs Local Networks</a><br>
+            <a href="#Section 3">IP Addresses and How Data Travels</a><br>
+            <a href="#Section 4">Routers and Wi-Fi</a>
+            <a href="#Section 5">CyberSecurity Basics</a>
         </div>
     </div>
 
     <div class="contentcontainer">
-        <h2>What is a Network?</h2>
+        <h2 id="Section 1">What is a Network?</h2>
         <p>A network is formed when two or more devices (such as computers, tablets, or phones) connect to share data. Networks facilitate device communication, allowing users to send messages, share files, and access the internet. Without networks, we wouldn't be able to access the internet, send emails, or play online games! </p>
         <p> <strong>Example:</strong> Consider a school with all PCs connected to the same printer. If you wish to print something, your computer sends the request over the network to the printer!</p>
         <p><strong> Fun Fact:</strong>The internet is the largest network in the world, connecting billions of devices! </p>
         <h3>What is a network?</h3>
-        <div class="quiz">
-            <form action="">
-                <input type="checkbox" id="ans1" name="q1" value="rightAnswer" class="rightAnswer">
-                <label for="ans1">A) A type of computer</label><br>
-                <input type="checkbox" id="ans2" name="q2" value="wrongAnswer" class="wrongAnswer">
-                <label for="ans2">B) A connection of devices that share information</label><br>
-                <input type="checkbox" id="ans3" name="q3" value="wrongAnswer" class="wrongAnswer">
-                <label for="ans3">C) A brand of Wi-Fi</label><br>
-                <button class="CheckAnswer" onClick="checkAnswer()">Check Answer</button>
-                <p id="right">You got it right!!!</p>
-                <p id="wrong">Oops, try again!</p>
+        <div class="quiz-container">
+            <form class="quiz">
+                <input type="checkbox" name="q1" class="wrongAnswer">
+                <label>A) A type of computer</label><br>
+
+                <input type="checkbox" name="q1" class="rightAnswer">
+                <label>B) A connection of devices that share information</label><br>
+
+                <input type="checkbox" name="q1" class="wrongAnswer">
+                <label>C) A brand of Wi-Fi</label><br>
+
+                <button type="button" class="check-answer">Check Answer</button>
             </form>
+
+            <p class="right-message" style="display: none; color: green;">You got it right!!!</p>
+            <p class="wrong-message" style="display: none; color: red;">Oops, try again!</p>
         </div>
 
-        <h2>The Internet vs Local Networks</h2>
+        <h2 id="Section 2">The Internet vs Local Networks</h2>
         <p>Not all networks are the same! There are two main types:</p>
         <ul>
             <li><strong>Local Network (LAN - Local Area Network):</strong> A small network that connects computers and devices in a specific place, such as a school, home, or company. A LAN enables devices to exchange files, Wi-Fi, and printers.</li>
@@ -65,9 +70,25 @@
             <li> The Internet is like a giant playground where students from many schools may interact. </li>
         </ul>
         <p><strong>Fun Fact:</strong> The internet works by sending tiny pieces of data called packets at super high speeds!</p>
-        <p>Quiz</p>
+        <h3>What is a Local Area Network?</h3>
+        <div class="quiz-container">
+            <form class="quiz">
+                <input type="checkbox" name="q1" class="wrongAnswer">
+                <label>A) A network that connects computers worldwide</label><br>
+
+                <input type="checkbox" name="q1" class="rightAnswer">
+                <label>B) A small network within a home, school or office</label><br>
+
+                <input type="checkbox" name="q1" class="wrongAnswer">
+                <label>C) A type of Internet Browser</label><br>
+
+                <button type="button" class="check-answer">Check Answer</button>
+            </form>
+            <p class="right-message" style="display: none; color: green;">You got it right!!!</p>
+            <p class="wrong-message" style="display: none; color: red;">Oops, try again!</p>
+        </div>
         
-        <h2>IP Addresses and How Data Travels </h2>
+        <h2 id="Section 3">IP Addresses and How Data Travels</h2>
         <p>Every networked device is assigned a unique IP address (Internet Protocol Address), which aids in device identification and location. It functions similarly to a residential address, ensuring that data reaches its intended destination.</p>
         <p><strong>How does data travel?</strong></p>
         <ol>
@@ -78,9 +99,25 @@
         </ol>
         <p><strong>Example: </strong>Sending an email is similar to mailing a letter: without an address, the message will not know where to go!</p>
         <p><Strong> Fun Fact: </Strong>Websites also have IP addresses, but we prefer names like google.com since they are easier to remember!</p>
-        <p>Quiz</p>
+        <h3>What does an IP address do?</h3>
+        <div class="quiz-container">
+            <form class="quiz">
+                <input type="checkbox" name="q1" class="rightAnswer">
+                <label>A) Helps identify and locate devices</label><br>
+
+                <input type="checkbox" name="q1" class="wrongAnswer">
+                <label>B) Makes a computer run faster</label><br>
+
+                <input type="checkbox" name="q1" class="wrongAnswer">
+                <label>C) Turns off Wi-Fi</label><br>
+
+                <button type="button" class="check-answer">Check Answer</button>
+            </form>
+            <p class="right-message" style="display: none; color: green;">You got it right!!!</p>
+            <p class="wrong-message" style="display: none; color: red;">Oops, try again!</p>
+        </div>
         
-        <h2>Routers and Wi-Fi</h2>
+        <h2 id="Section 4">Routers and Wi-Fi</h2>
         <p>A router is a device that links many networks and routes internet traffic. It guarantees that data packets reach the intended device, much like a traffic controller controlling cars on a busy road.</p>
         <p><strong>What is Wi-Fi?</strong></p>
         <p> Wi-Fi allows devices to connect wirelessly via radio waves rather than wires<br><strong>Example:</strong></p>
@@ -89,9 +126,25 @@
             <li>Wi-Fi functions similarly to a courier, transporting information over air rather than roadways (cables). </li>
         </ul>
         <p><strong>Fun Fact: </strong>Wi-Fi signals can be weakened by walls or when too many devices are connected simultaneously!</p>
-        <p>Quiz</p>
+        <h3>What is the main job of a router?</h3>
+        <div class="quiz-container">
+            <form class="quiz">
+                <input type="checkbox" name="q1" class="rightAnswer">
+                <label>A) To connect devices and direct internet traffic</label><br>
+
+                <input type="checkbox" name="q1" class="wrongAnswer">
+                <label>B) To make Wi-Fi signal stronger</label><br>
+
+                <input type="checkbox" name="q1" class="wrongAnswer">
+                <label>C) To block websites</label><br>
+
+                <button type="button" class="check-answer">Check Answer</button>
+            </form>
+            <p class="right-message" style="display: none; color: green;">You got it right!!!</p>
+            <p class="wrong-message" style="display: none; color: red;">Oops, try again!</p>
+        </div>
     
-        <h2>CyberSecurity Basics</h2>
+        <h2 id="Section 5">CyberSecurity Basics</h2>
         <p>Due to networks connecting many devices, internet security is critical! Cybersecurity safeguards equipment against hacking and cyber attacks.</p>
         <p><strong>Good habits for remaining secure online:</strong></p>
         <ul>
@@ -101,10 +154,25 @@
         </ul>
         <p><strong>Example: </strong> A password is like a key to your home, only you should have it!</p>
         <p><strong>Fun Fact: </strong>The first computer virus was produced in 1986, yet there are now millions of viruses online! This is why antivirus software is so vital.</p>
-        <p>Quiz</p>
+        
+        <h3>Which of these is a good way to stay safe online?</h3>
+        <div class="quiz-container">
+            <form class="quiz">
+                <input type="checkbox" name="q1" class="wrongAnswer">
+                <label>A) Using a weak password</label><br>
+
+                <input type="checkbox" name="q1" class="rightAnswer">
+                <label>B) Not sharing personal information</label><br>
+
+                <input type="checkbox" name="q1" class="wrongAnswer">
+                <label>C) Clicking on random links</label><br>
+
+                <button type="button" class="check-answer">Check Answer</button>
+            </form>
+            <p class="right-message" style="display: none; color: green;">You got it right!!!</p>
+            <p class="wrong-message" style="display: none; color: red;">Oops, try again!</p>
+        </div>
     </div>
-    
-    
 
     <div class="botnav">
         <a href="https://github.com/Ka-hels/TeamProject">Github Project</a>
