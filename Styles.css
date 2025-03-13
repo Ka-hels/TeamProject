@@ -147,7 +147,19 @@ html, body {
     background-color: #0d2b45;
     color: #8d697a;
 }
+ #index-content{
+     padding-right:16px;
+     padding-left: 16px;
+     text-align: center;
+ }
+ 
+ #index-content img{
+     padding-right: 0 !important;
+     padding-left: 0 !important;
+ }
 
-.quiz-container{
-    
-}
+ #index-content a{
+     text-decoration: none;
+     color: #544e68;
+     
+ }
