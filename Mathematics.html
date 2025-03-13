@@ -23,46 +23,126 @@
                 <i class="fa fa-bars"></i>
             </a>
         </div>
-        
+
     <br>
     <div class="sidenav" id="mySidenav">
         <div class="sidenavcontent">
             <h2>Content</h2>
-            <a href="#Section 1">1. Lorem Ipsum</a><br>
-            <a href="#Section 2">2. Lorem Ipsum</a><br>
-            <a href="#Section 3">3. Lorem Ipsum</a><br>
-            <a href="#Section 4">4. Lorem Ipsum</a>
+            <ol>
+                <li><a href="#Section 1">Introduction to Maths</a></li><br>
+                <li><a href="#Section 2">Why is it important?</a></li><br>
+                <li><a href="#Section 3">Introduction to Binary</a></li><br>
+                <li><a href="#Section 4">Ideas for learning</a></li>
+            </ol>
         </div>
     </div>
 
     <div class="contentcontainer">
-        <h2 id="Section 1">Lorem ipsum</h2>
-        <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <h2 id="Section 2">Lorem ipsum</h2>
-        <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <h2 id="Section 3">Lorem ipsum</h2>
-        <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <h2 id="Section 1">Introduction to Maths</h2>
+        <p>Mathematics is everywhere! It helps us solve problems, make decisions, and explore fun challenges. From science and technology to games, maths is the key to understanding the world. In this section, we’ll explore various maths concepts through simple questions and answers to help you learn while having fun.</p>
+        <h3>Key Maths Topics:</h3>
+        <p>These are the important topics that you should focus on if you want to learn more about Computer Science!</p>
+        <ol>
+            <li>Basic Arithmetic</li>
+            <li>Fractions and Decimals</li>
+            <li>Geometry and Shapes</li>
+            <li>Logic and Puzzles</li>
+            <li>Binary</li>
+        </ol>
         
-        <div class="quiz">
-            <h2>Test Your Knowledge:</h2>
-            <form action="">
-                <input type="checkbox" id="ans1" name="q1" value="rightAnswer" class="rightAnswer">
-                <label for="ans1">Answer 1</label><br>
-                <input type="checkbox" id="ans2" name="q2" value="wrongAnswer" class="wrongAnswer">
-                <label for="ans2">Answer 1</label><br>
-                <input type="checkbox" id="ans3" name="q3" value="wrongAnswer" class="wrongAnswer">
-                <label for="ans3">Answer 1</label><br>
-                <button class="CheckAnswer" onClick="checkAnswer()">Check Answer</button>
-                <p id="right">You got it right!!!</p>
-                <p id="wrong">Oops, try again!</p>
+        <h2 id = "Section 2">Why is Maths Important?</h2>
+        <p>Math is everywhere in life, and it helps us:</p>
+        <ul>
+            <li><strong>Shop Smartly:</strong> Count and plan purchase</li>
+            <li><strong>Manage Time:</strong> Organize your day, like how long a football game lasts.</li>
+            <li><strong>Technology:</strong> Computers, coding, and engineering rely on maths.</li>
+        </ul>
+        <h4>If a football game lasts 90 minutes and is split into two halves, how long is the first half?</h4>
+        <div class="quiz-container">
+            <form class="quiz">
+                <input type="checkbox" name="q1" class="wrongAnswer">
+                <label>A) 30 minutes</label><br>
+
+                <input type="checkbox" name="q1" class="rightAnswer">
+                <label>B) 45 minutes</label><br>
+
+                <input type="checkbox" name="q1" class="wrongAnswer">
+                <label>C) 60 minutes</label><br>
+
+                <button type="button" class="check-answer">Check Answer</button>
             </form>
+
+            <p class="right-message" style="display: none; color: green;">You got it right!!!</p>
+            <p class="wrong-message" style="display: none; color: red;">Oops, try again!</p>
         </div>
+        
+        <h2 id="Section 3">Introduction to Binary</h2>
+        <p>Binary is a special way of counting using only two numbers: 0 and 1. It’s the language that computers use to process and store information. Everything you see on your screen, from games to websites, is made up of binary code! Understanding binary helps us understand how computers “think” and work behind the scenes.</p>
+        <p>In binary, every digit is called a bit. A group of 8 bits is called a byte, and it's used to represent different types of data, like numbers, letters, and images.</p>
+        <p><strong>How Binary Works:</strong></p>
+        <p>In the decimal system (the regular way we count), we use ten digits: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9. But in binary, we only use two digits: 0 and 1. To understand how binary works, let’s take a look at the first few binary numbers:</p>
+        <ul>
+            <li>0 (Binary) = 0 (Decimal)</li>
+            <li>1 (Binary) = 1 (Decimal)</li>
+            <li>10 (Binary) = 2 (Decimal)</li>
+            <li>11 (Binary) = 3 (Decimal)</li>
+            <li>100 (Binary) = 4 (Decimal)</li>
+            <li>101 (Binary) = 5 (Decimal)</li>
+        </ul>
+        <p>See how the numbers keep going up, just like in the decimal system? Binary just works in a different way!</p>
+
+        <h3>Test Your Knowledge:</h3>
+        <div class="quiz-container">
+            <p><strong>What is the binary number for "3"?</strong></p>
+            <form class="quiz">
+                <input type="checkbox" name="q1" class="rightAnswer">
+                <label>A) 11</label><br>
+
+                <input type="checkbox" name="q1" class="wrongAnswer">
+                <label>B) 10</label><br>
+
+                <input type="checkbox" name="q1" class="wrongAnswer">
+                <label>C) 101</label><br>
+
+                <button type="button" class="check-answer">Check Answer</button>
+            </form>
+
+            <p class="right-message" style="display: none; color: green;">You got it right!!!</p>
+            <p class="wrong-message" style="display: none; color: red;">Oops, try again!</p>
+        </div>
+
+        <div class="quiz-container">
+            <p><strong>What does the binary number "100" represent in decimal?</strong></p>
+            <form class="quiz">
+                <input type="checkbox" name="q1" class="wrongAnswer">
+                <label>A) 2</label><br>
+
+                <input type="checkbox" name="q1" class="wrongAnswer">
+                <label>B) 3</label><br>
+
+                <input type="checkbox" name="q1" class="rightAnswer">
+                <label>C) 4</label><br>
+
+                <button type="button" class="check-answer">Check Answer</button>
+            </form>
+
+            <p class="right-message" style="display: none; color: green;">You got it right!!!</p>
+            <p class="wrong-message" style="display: none; color: red;">Oops, try again!</p>
+        </div>
+    
+    <h2 id="Section 4">Ideas for learning</h2>
+        <h3>How Can We Make Maths Fun?</h3>
+        <p><strong>Real-Life Examples:</strong></p>
+        <p>Use things like cutting a pizza into fractions to make maths more relatable and practical. (And Yummy!)</p>
+        <h3>Challenges and Puzzles</h3>
+        <p>You can try and solve some fun puzzles that will help your problem-solving and maths skills!</p>
+        <ul>
+            <li>Sudoku: A simple way to practice logic and number placement.</li>
+            <li>Number Sequences: Counting by two's, five's, fractions, etc.</li>
+            <li>Math Crosswords: Use math vocabulary to create your own crosswords, ask your friends to solve them!</li>
+        </ul>
+        <h3>Interactive Maths Games</h3>
+        <p>There are loads of super fun maths games all over the internet and they can help develop your maths skills! Make sure to get parental permission from a guardian first to help you stay safe online.</p>
         
     </div>
     

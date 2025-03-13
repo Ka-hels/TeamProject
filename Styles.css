@@ -55,7 +55,7 @@ html, body {
 }
 
 .sidenavcontent{
-    padding: 20px;
+    padding-left: 8px;
     background-color: #ffaa5e;
     font-family: "Open Sans";
     font-size: 1.25em;
