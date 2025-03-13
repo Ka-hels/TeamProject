@@ -6,6 +6,7 @@ function adjustSidenavHeight()//Changes the sidenav height to avoid overlap with
     
     const botnav = document.querySelector(".botnav")
     let botnavHeight = botnav.offsetHeight;
+    let botnavVerticalPos = botnav.getBoundingClientRect().top;
     
     document.querySelector(".sidenav").style.marginTop = `calc(${topnavVerticalPos}px + ${topnavHeight}px)`;
     document.querySelector(".sidenav").style.marginBottom = `${botnavHeight}px`;

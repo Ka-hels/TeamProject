@@ -27,16 +27,15 @@ html, body {
     top: 0;
     left: 0;
     background-color: #ffaa5e;
-    overflow-y: scroll;
+    overflow-y: hidden;
     overflow-x: hidden;
 }
 
-
-
 .contentcontainer{
-    padding-left: 168px;
+    padding-left: 172px;
     padding-right: 16px;
     min-height: calc(100vh - 50px);
+    font-family: "Open Sans"
 }
 
 @media screen and (max-width: 600px) {

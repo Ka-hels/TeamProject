@@ -1,21 +1,113 @@
 <!DOCTYPE html>
 <html lang="en-uk">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="Styles.css">
+    <link href='https://fonts.googleapis.com/css?family=ADLaM Display' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <script src="Script.js"></script>
+    <script src="https://kit.fontawesome.com/fa624e360f.js" crossorigin="anonymous"></script>
     <title>Networking</title>
 </head>
 <body>
-    <h1 class="logo"><a href="index.html">Website Name</a></h1> <!-- Will be altered to include a link back to the Homepage and potentially be an image -->
-    <div class="topnav">
+    <header><h1 class="logo"><a href="index.html">KidsByte</a></h1></header>
+    <div class="topnav" id="myTopnav">
         <a href="index.html">Home</a>
-        <a href="Mathematics.html">Mathematics</a>
+        <a href="Mathematics.html" >Mathematics</a>
         <a href="CyberSecurity.html">CyberSecurity</a>
         <a class="active" href="Networking.html">Networking</a>
         <a href="Technology.html">Technology</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <br>
+    <div class="sidenav" id="mySidenav">
+        <div class="sidenavcontent">
+            <h2>Content</h2>
+            <a href="#Section 1">1. Lorem Ipsum</a><br>
+            <a href="#Section 2">2. Lorem Ipsum</a><br>
+            <a href="#Section 3">3. Lorem Ipsum</a><br>
+            <a href="#Section 4">4. Lorem Ipsum</a>
+        </div>
+    </div>
+
+    <div class="contentcontainer">
+        <h2>What is a Network?</h2>
+        <p>A network is formed when two or more devices (such as computers, tablets, or phones) connect to share data. Networks facilitate device communication, allowing users to send messages, share files, and access the internet. Without networks, we wouldn't be able to access the internet, send emails, or play online games! </p>
+        <p> <strong>Example:</strong> Consider a school with all PCs connected to the same printer. If you wish to print something, your computer sends the request over the network to the printer!</p>
+        <p><strong> Fun Fact:</strong>The internet is the largest network in the world, connecting billions of devices! </p>
+        <h3>What is a network?</h3>
+        <div class="quiz">
+            <form action="">
+                <input type="checkbox" id="ans1" name="q1" value="rightAnswer" class="rightAnswer">
+                <label for="ans1">A) A type of computer</label><br>
+                <input type="checkbox" id="ans2" name="q2" value="wrongAnswer" class="wrongAnswer">
+                <label for="ans2">B) A connection of devices that share information</label><br>
+                <input type="checkbox" id="ans3" name="q3" value="wrongAnswer" class="wrongAnswer">
+                <label for="ans3">C) A brand of Wi-Fi</label><br>
+                <button class="CheckAnswer" onClick="checkAnswer()">Check Answer</button>
+                <p id="right">You got it right!!!</p>
+                <p id="wrong">Oops, try again!</p>
+            </form>
+        </div>
+
+        <h2>The Internet vs Local Networks</h2>
+        <p>Not all networks are the same! There are two main types:</p>
+        <ul>
+            <li><strong>Local Network (LAN - Local Area Network):</strong> A small network that connects computers and devices in a specific place, such as a school, home, or company. A LAN enables devices to exchange files, Wi-Fi, and printers.</li>
+            <li><strong>Internet (WAN - Wide Area Network):</strong> A large network that connects computers throughout the world via cables, satellites, and Wi-Fi. The internet enables people to send emails, browse websites, watch videos, and play online games. </li>
+        </ul>
+        <p><strong>Comparison Example:</strong></p>
+        <ul>
+            <li>A Local Network functions similarly to a classroom, allowing students to communicate with one another. </li>
+            <li> The Internet is like a giant playground where students from many schools may interact. </li>
+        </ul>
+        <p><strong>Fun Fact:</strong> The internet works by sending tiny pieces of data called packets at super high speeds!</p>
+        <p>Quiz</p>
+        
+        <h2>IP Addresses and How Data Travels </h2>
+        <p>Every networked device is assigned a unique IP address (Internet Protocol Address), which aids in device identification and location. It functions similarly to a residential address, ensuring that data reaches its intended destination.</p>
+        <p><strong>How does data travel?</strong></p>
+        <ol>
+            <li> Data is divided into small packets, much like breaking a long letter into smaller envelopes.</li>
+            <li>Every packet has a destination address (IP address).</li>
+            <li>Routers direct packets to the fastest path.</li>
+            <li>When the packets reach their final destination, they are reassembled.</li>
+        </ol>
+        <p><strong>Example: </strong>Sending an email is similar to mailing a letter: without an address, the message will not know where to go!</p>
+        <p><Strong> Fun Fact: </Strong>Websites also have IP addresses, but we prefer names like google.com since they are easier to remember!</p>
+        <p>Quiz</p>
+        
+        <h2>Routers and Wi-Fi</h2>
+        <p>A router is a device that links many networks and routes internet traffic. It guarantees that data packets reach the intended device, much like a traffic controller controlling cars on a busy road.</p>
+        <p><strong>What is Wi-Fi?</strong></p>
+        <p> Wi-Fi allows devices to connect wirelessly via radio waves rather than wires<br><strong>Example:</strong></p>
+        <ul>
+            <li>A router functions similarly to a post office, routing mail (data) to the appropriate address (device). </li>
+            <li>Wi-Fi functions similarly to a courier, transporting information over air rather than roadways (cables). </li>
+        </ul>
+        <p><strong>Fun Fact: </strong>Wi-Fi signals can be weakened by walls or when too many devices are connected simultaneously!</p>
+        <p>Quiz</p>
+    
+        <h2>CyberSecurity Basics</h2>
+        <p>Due to networks connecting many devices, internet security is critical! Cybersecurity safeguards equipment against hacking and cyber attacks.</p>
+        <p><strong>Good habits for remaining secure online:</strong></p>
+        <ul>
+            <li>Create strong passwords (a mix of letters, numbers, and symbols)</li>
+            <li>Do not reveal private information (such as your address or password)</li>
+            <li>Be wary of links because hackers use bogus websites (phishing) to steal information</li>
+        </ul>
+        <p><strong>Example: </strong> A password is like a key to your home, only you should have it!</p>
+        <p><strong>Fun Fact: </strong>The first computer virus was produced in 1986, yet there are now millions of viruses online! This is why antivirus software is so vital.</p>
+        <p>Quiz</p>
     </div>
     
-    <p>Networks</p> <!-- Debug Line -->
+    
+
+    <div class="botnav">
+        <a href="https://github.com/Ka-hels/TeamProject">Github Project</a>
+    </div>
 </body>
 </html>
